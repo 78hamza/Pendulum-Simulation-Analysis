@@ -36,17 +36,22 @@ This project combines:
 
 
 ### Project structure:
-pendulum_simulation/
-|
+pendulum_simulation
+
 |-- main.c # program entry and menu handling
 
 |-- pendulum.c # simulation and linked list creation
 
 |-- energy.c # energy calculation funcionts
+
 |-- print.c # printing and csv export
+
 |-- structs.h # linked list node definition
+
 |-- Makefile # compilation instrucitons
+
 |-- analysis.py #Python ML & visualisation
+
 
 
 ### Physics behind the simulation
