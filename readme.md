@@ -39,7 +39,9 @@ This project combines:
 pendulum_simulation/
 |
 |-- main.c # program entry and menu handling
+
 |-- pendulum.c # simulation and linked list creation
+
 |-- energy.c # energy calculation funcionts
 |-- print.c # printing and csv export
 |-- structs.h # linked list node definition
