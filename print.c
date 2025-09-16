@@ -7,18 +7,21 @@ void    print_lst(Node *head)
     if (head == NULL)
         return ;
     
-    printf("time\t\ttheta\t\tomega\t\talpha\n");
+    printf("time\ttheta\tomega\talpha\tKinetic energy\tPotential energy\tTotal energy\n");
     printf("------------------------------------------\n");
     
     temp = head;
     while (temp)
     {
-        printf("%.3f\t%.3f\t%.3f\t%.3f\n",
-               temp->temp,
-               temp->angular,
-               temp->angular_vel,
-               temp->angular_acc);
-        
+        printf("%.3f\t%.3f\t%.3f\t%.3f\t%.3f\t%.3f\t%.3f\n",
+                temp->time,
+                temp->angular,
+                temp->angular_vel,
+                temp->angular_acc,
+                temp->kin_ene,
+                temp->pot_ene,
+                temp->tot_ene);
+    
         temp = temp->next;
     }
 }

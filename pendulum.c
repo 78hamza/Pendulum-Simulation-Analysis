@@ -1,12 +1,12 @@
-#include "structs.h"
+#include "strfun.h"
 
 # define G 9.81
 # define L 1.0
 
 // compute angular acceleration 
-double  compute_acc(double theta)
+double  compute_acc(double *theta)
 {
-    return -(G/L) *  sin(theta);
+    return -(G/L) *  sin(*theta);
 }
 
 void    update_pendulum(double *theta, double *omega, double dt)
