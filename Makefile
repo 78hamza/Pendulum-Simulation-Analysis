@@ -6,7 +6,7 @@ LDFLAGS = -lm
 TARGET = program
 
 # source files
-SRCS = main.c lst.c pendulum.c print.c energy.c
+SRCS = main.c lst.c pendulum.c print.c energy.c ft_itoa.c
 OBJS = $(SRCS:.c=.o)
 
 # default target

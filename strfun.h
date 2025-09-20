@@ -20,7 +20,7 @@ Node    *create_node(double t, double angular, double vel, double acc, double ki
 void    append_node(Node **head, Node *new_node);
 void    free_list(Node *head);
 void    print_lst(Node *head);
-
+void    export_2_csv(char *file_name, Node *head);
 // pendulum physics function
 double  compute_acc(double *theta);
 void    update_pendulum(double *theta, double *omega, double  dt);
@@ -29,5 +29,6 @@ void    update_pendulum(double *theta, double *omega, double  dt);
 double kinetic_energy(double omega);
 double potential_energy(double theta);
 double total_energy(double theta, double omega);
+char    *ft_itoa(int n);
 #endif
 

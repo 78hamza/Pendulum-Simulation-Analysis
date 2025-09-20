@@ -42,5 +42,6 @@ int main()
         i++;
     }
     print_lst(head);
+    export_2_csv("data.csv", head);
     return 0;
 }
